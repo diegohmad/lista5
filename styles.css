@@ -1,0 +1,105 @@
+/* Estilo Barroco */
+
+body {
+    background-color: #f8f3e8;
+    font-family: 'Georgia', serif;
+    color: #4b2e83;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 3em;
+    color: #5a3d99;
+    text-shadow: 2px 2px #d4c1f0;
+}
+
+h2 {
+    font-size: 2em;
+    color: #4b2e83;
+    text-shadow: 1px 1px #c3a8e3;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #38205e;
+    text-shadow: 1px 1px #b8a1d3;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.container div {
+    width: 150px;
+}
+
+a {
+    display: block;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #38205e;
+    padding: 10px;
+    border: 2px solid #38205e;
+    border-radius: 5px;
+    background-color: #e6d3f8;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #c3a8e3;
+    color: #f8f3e8;
+    border-color: #5a3d99;
+    text-shadow: 1px 1px #5a3d99;
+}
+
+a:active {
+    background-color: #4b2e83;
+    color: #f8f3e8;
+    border-color: #38205e;
+    text-shadow: 1px 1px #38205e;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a {
+        font-size: 1em;
+        padding: 8px;
+    }
+}
